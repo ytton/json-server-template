@@ -13,8 +13,8 @@ module.exports = (req, res, next) => {
     role = db.get('roles').find({ id: user.roleId }).value();
   }
   const prefix = role.perms[req.url.split('/')[1]];
-  req.url = prefix ? '/' + prefix : '' + req.url;
-  console.log('Get ' + req.url);
+  req.url = prefix ? '/' + prefix + req.url : '' + req.url;
+  console.log('REAL ' + req.method + ' ' + req.url);
   next();
 };
 
