@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "email": "admin@qq.com",
+      "password": "$2a$10$V7VT9M5vQmY9fxStxJyhueGDq5srBw9AjhqEFUaAy8MZNaxhjbDwi",
+      "id": 1,
+      "roleId": 1
+    },
+    {
+      "email": "test2@qq.com",
+      "password": "$2a$10$qlCXZFpAvlvvTDMCOoJJHOTLpwSGjVZfbu2eB3fkpyNyRCBg9q/ye",
+      "username": "6166aa",
+      "id": 2,
+      "roleId": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "admin",
+      "perms": {
+        "all": "*"
+      },
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "perms": {
+        "users": 600,
+        "roles": 600,
+        "articles": 664
+      },
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "guest",
+      "perms": {
+        "users": 600,
+        "roles": 600,
+        "articles": 664
+      },
+      "userId": 1
+    }
+  ],
+  "articles": [
+    {
+      "title": "文章标题",
+      "desc": "这样的语言很有用，因为它通常包含可能会欺骗语言检测的其他语言，使其认为它是嵌入语言而不是",
+      "content": "文字分隔符的颜色。",
+      "userId": 1
+    }
+  ]
+}

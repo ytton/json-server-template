@@ -1,0 +1,10 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "超级管理员",
+      "username": "root",
+      "password": "123456aa"
+    }
+  ]
+}
